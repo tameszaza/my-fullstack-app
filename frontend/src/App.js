@@ -5,7 +5,8 @@ function App() {
   const [username, setUsername] = useState("");
   const [form, setForm] = useState({ username: "", password: "" });
 
-  const BACKEND = "http://localhost:5000"; // Replace with Render backend URL when deployed
+  const BACKEND = "https://football-kpci.onrender.com"; // <-- change this!
+  // Replace with Render backend URL when deployed
 
   useEffect(() => {
     fetch(`${BACKEND}/api/check`, {
