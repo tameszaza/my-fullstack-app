@@ -4,7 +4,7 @@ from flask_cors import CORS
 from flask_session import Session
 
 app = Flask(__name__)
-CORS(app, supports_credentials=True, origins=["https://your-frontend.onrender.com"])
+CORS(app, supports_credentials=True, origins=["https://my-fullstack-app-l1vs.onrender.com"])
 app.secret_key = "super-secret-key"
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
